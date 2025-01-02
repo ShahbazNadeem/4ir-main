@@ -102,7 +102,7 @@ p {
   h1 {
     font-size: 55px !important;
     font-weight: 500;
-    line-height: 60px !important;
+    line-height: 68px !important;
   }
 
   h2 {
@@ -136,7 +136,7 @@ p {
 
   h1 {
     font-size: 45px !important;
-    line-height: 57px !important;
+    line-height: 58px !important;
   }
 
   h2 {
@@ -167,7 +167,7 @@ p {
 @media (max-width: 768px) {
   h1 {
     font-size: 36px !important;
-    line-height: 49px;
+    line-height: 48px;
   }
 
   h2 {

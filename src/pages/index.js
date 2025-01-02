@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import "./index.css"
-import Frame1 from "@/images/Frame1.png"
-import RevolutionImg from "@/images/revolution-img.png"
+import robot from "@/images/robot.png"
+import RoundBlue from "@/images/RoundBlue.gif"
+import whatis4IR from "@/images/what-is-4IR-1.png"
 import voiceanimate from "@/images/voiceanimate.png"
 import Logo2_4ir from "@/images/4IR-Logo2.png"
 import MeetTheTeam from '@/components/MeetTheTeam'
@@ -12,6 +13,7 @@ import Card1 from '@/components/cards/Card1'
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
 import Accordian from '@/components/Accordian'
 import { ActionCard } from '@/components/ActionCard'
+import Head from 'next/head'
 
 const Index = () => {
   const INITIAL_VISIBLE_COUNT = 3;
@@ -26,6 +28,9 @@ const Index = () => {
   };
   return (
     <div>
+       <Head>
+        <title>4IR - AI Talk Assist</title>
+      </Head>
       <section className="banner-header">
         <div className="container">
           <div className="wrapper-banner">
@@ -35,7 +40,7 @@ const Index = () => {
                 EMPOWER YOUR BUSINESS WITH
                 <span className="banner-span-1">
                   <Image src={Logo2_4ir} alt={Logo2_4ir} />
-                  AI-DRIVEN
+                  AI-DRIVEN 
                 </span>
                 SUCCESS
               </h1>
@@ -53,13 +58,14 @@ const Index = () => {
               </div>
             </div>
             <div className="banner-image">
-              <figure><Image src={Frame1} alt="Frame1" /></figure>
+              <figure className='figure1'><Image src={RoundBlue} alt="Frame1" /></figure>
+              <figure><Image src={robot} alt="Frame1" /></figure>
             </div>
           </div>
           <div className="wrapper-2nd">
             <div className="revolution-img">
               <figure>
-                <Image src={RevolutionImg} alt="RevolutionImg" />
+                <Image src={whatis4IR} alt="RevolutionImg" />
               </figure>
             </div>
             <div className="revolution-content">

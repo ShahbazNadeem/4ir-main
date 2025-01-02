@@ -6,6 +6,9 @@ import educationSvg from "../svg/educationSvg.png"
 import retaiSvg from "../svg/retaiSvg.png"
 import otherSvg from "../svg/otherSvg.png"
 import unsplsh_card_img from "@/images/unsplsh_card_img.png"
+import digital_blue from "@/images/digital_blue.png"
+import freepik from "@/images/freepik.png"
+import representation from "@/images/representation-use.png"
 import blogImg1 from "@/images/blogImg1.png"
 import blogImg2 from "@/images/blogImg2.png"
 import blogImg3 from "@/images/blogImg3.png"
@@ -78,19 +81,19 @@ export const howToFitData = [
         id: 1,
         title: "Revolutionizing Information Processing",
         description: "Large language models are capable of processing and generating human-quality text, enabling more efficient and effective information management. This has significant implications for various industries, from content creation to data analysis.",
-        img: unsplsh_card_img
+        img: digital_blue
     },
     {
         id: 1,
         title: "Powering Intelligent Systems",
         description: "These models form the backbone of intelligent systems, such as chatbots, virtual assistants, and automated customer service systems. They enhance user experiences and streamline operations.",
-        img: unsplsh_card_img
+        img: freepik
     },
     {
         id: 1,
         title: "Accelerating Scientific Discovery",
         description: "By analyzing vast datasets and generating insights, large language models contribute to scientific research and development. They can help researchers identify patterns, formulate hypotheses, and accelerate the pace of discovery.",
-        img: unsplsh_card_img
+        img: representation
     },
 ]
 
