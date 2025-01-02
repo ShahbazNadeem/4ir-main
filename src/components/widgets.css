@@ -1,0 +1,423 @@
+/* ///////////////Meet The Team///////////////////// */
+.team-wrapper {
+    padding-top: 50px;
+}
+
+.team-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.team-img-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 40px;
+}
+
+.team-img-card .img-card:nth-child(1) {
+    background-color: #01A1CD;
+    background-image: url("../../public/images/TeamMember1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.team-img-card .img-card:nth-child(2) {
+    background-color: #FBC349;
+    background-image: url("../../public/images/TeamMember2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.team-img-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.img-card {
+    border-radius: 15px;
+    flex-basis: 41%;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.76) 0px -50px 36px -28px inset;
+
+}
+
+.img-card-img {
+    height: 416px;
+}
+
+.img-card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-card-content {
+    position: absolute;
+    bottom: 14px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.img-card-content,
+span {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/* ///////////////card1///////////////////// */
+.card1-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    padding-top: 50px;
+}
+
+.fit-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 30%;
+    padding: 24px 20px;
+    gap: 30px;
+    border-radius: 12px;
+    border: 1px solid #090B0C;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fit-card figure {
+    width: 100%;
+}
+
+.fit-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* ///////////////Accordian///////////////////// */
+.accordion {
+    display: flex;
+    gap: 26px;
+    flex-direction: column;
+}
+
+.accordion-header {
+    border: none !important;
+}
+
+.accordion-body {
+    padding: 0px 18px !important;
+}
+
+.accordion-body ul {
+    list-style: none;
+    color: var(--primary);
+}
+
+.accordion-item {
+    border-radius: 6px;
+    border: none !important;
+    background-color: #090B0C !important;
+}
+
+.accordion-button {
+    background-color: #090B0C !important;
+    color: white !important;
+    padding: 0px 18px !important;
+}
+
+.accordion-button:focus {
+    border: none !important;
+    box-shadow: none;
+}
+
+/* .accordion-button:after {
+    padding: 5px 0px !important;
+    background-image: url("../../public/svg/arrowdown1.png");
+    color: white !important;
+    background-color: #310470 !important;
+    border-radius: 3px !important;
+} */
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+}
+
+.accordion-item:focus-within {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    outline: 2px solid #310470;
+    outline-offset: 4px;
+}
+
+.accordion-item:not(:focus-within) {
+    outline: 2px solid #707070;
+    outline-offset: 4px;
+}
+
+/* ///////////////Action-Card///////////////////// */
+.action-card {
+    background-image: url("../../public/images/actioncardImg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.action-card-item {
+    width: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.action-card p {
+    text-align: center;
+}
+
+/* ///////////////Swipper1///////////////////// */
+.Swipper1 {
+    /* color: #090B0C; */
+}
+
+.Swipper1 .swiper {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.Swipper1 .swiper-slide {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.Swipper1 .swiper-slide img {
+    /* display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; */
+}
+
+.Swipper1 .swiper-nav-btns {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 60px;
+}
+
+.Swipper1 .swiper-nav-btns button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    margin-top: 30px;
+    transition: all .5s;
+    border-radius: 7.92px;
+    padding: 20px;
+    border: 1px solid #310470;
+    color: white;
+}
+
+.Swipper1 .swiper-nav-btns button:hover {
+    background-color: #310470;
+    cursor: pointer;
+}
+
+.Swipper1-main-slide {
+    display: flex;
+    gap: 30px;
+}
+
+.Swipper1-slider-img {
+    flex-basis: 40%;
+}
+
+.Swipper1-slider-img img {
+    width: 100%;
+    height: auto;
+}
+
+.Swipper1-slider-content {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.Swipper1-slider-content button {
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/*  */
+@media (max-width: 1200px) {
+    .img-card-img {
+        height: 300px;
+    }
+
+    .img-card-content {
+        bottom: 7px;
+        left: 63px;
+        gap: 0px;
+    }
+
+    .img-card-content,
+    span {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .action-card {
+        padding: 30px 0px;
+    }
+
+    .Swipper1 .swiper-nav-btns button {
+        padding: 15px;
+    }
+
+    .Swipper1 .swiper-nav-btns {
+        gap: 70px;
+    }
+}
+
+@media (max-width: 992px) {
+    .team-content {
+        width: 57%;
+    }
+
+    .img-card-img {
+        height: 264px;
+    }
+
+    .img-card-content {
+        bottom: 5px;
+        left: 30px;
+    }
+
+    .img-card-content,
+    span {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .Swipper1 .swiper-nav-btns button {
+        padding: 12px;
+    }
+
+    .Swipper1 .swiper-nav-btns {
+        gap: 64px;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-content {
+        width: 70%;
+    }
+
+    .img-card-img {
+        height: 198px;
+    }
+
+    .img-card-content,
+    span {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .action-card-item {
+        width: 460px;
+    }
+
+    .action-card {
+        padding: 20px 0px;
+    }
+
+    .Swipper1 .swiper-nav-btns {
+        justify-content: center;
+    }
+
+    .Swipper1 .swiper-nav-btns button {
+        padding: 10px;
+    }
+
+    .Swipper1-main-slide {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Swipper1-main-slide .Swipper1-slider-img {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .Swipper1-main-slide .Swipper1-slider-content {
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .team-content {
+        width: 100%;
+    }
+
+    .img-card-img {
+        height: 109px;
+    }
+
+    .img-card-content {
+        left: 10px;
+    }
+
+    .img-card-content,
+    span {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .fit-card {
+        flex-basis: 45%;
+        padding: 10px 10px;
+        gap: 13px;
+    }
+
+    .action-card-item {
+        width: 100%;
+        gap: 0px;
+    }
+
+    .action-card {
+        gap: 0px;
+        padding: 30px 10px;
+    }
+    .Swipper1-main-slide .Swipper1-slider-img {
+        width: 100%;
+    }
+
+    .Swipper1-main-slide .Swipper1-slider-content {
+        width: 100%;
+    }
+    .Swipper1 .swiper-nav-btns button {
+        padding: 8px;
+    }
+
+}

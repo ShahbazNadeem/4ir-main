@@ -1,0 +1,36 @@
+/* ////////////////Wrapper-B1///////////// */
+.wrapper-B1 .action-card {
+    padding-top: 120px !important;
+    border-radius: 0px !important;
+    max-width: 1916px;
+    margin: 0 auto;
+    /* background-image: url("../../../public/images/revolution-img.png") !important; */
+}
+/* ////////////////Wrapper-B2///////////// */
+.Wrapper-B2 {
+    padding-top: 50px;
+}
+.Wrapper-B2 .swiper-pagination {
+    position: absolute;
+    left: 41.5%;
+    bottom: 18px;
+    color: white;
+    z-index: -1;
+    
+}
+/* media query */
+@media (max-width: 1200px) {
+    .Wrapper-B2 .swiper-pagination {
+        left: 40.5%;
+    }
+}
+@media (max-width: 992px) {
+    .Wrapper-B2 .swiper-pagination {
+        left: 39%;
+    }
+}
+@media (max-width: 768px) {
+    .Wrapper-B2 .swiper-pagination {
+        left: 0%;
+    }
+}
