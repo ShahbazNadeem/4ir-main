@@ -162,6 +162,30 @@ export const lastestBlog = [
         description: "This comprehensive suite of payment products offers a fully integrated solution for handling various payment needs.",
         img: blogImg3,
     },
+    {
+        id: 7,
+        title: "Activities Improve Mind",
+        description: "This comprehensive suite of payment products offers a fully integrated solution for handling various payment needs.",
+        img: blogImg3,
+    },
+    {
+        id: 8,
+        title: "Activities Improve Mind",
+        description: "This comprehensive suite of payment products offers a fully integrated solution for handling various payment needs.",
+        img: blogImg3,
+    },
+    {
+        id: 9,
+        title: "Activities Improve Mind",
+        description: "This comprehensive suite of payment products offers a fully integrated solution for handling various payment needs.",
+        img: blogImg3,
+    },
+    {
+        id: 10,
+        title: "Activities Improve Mind",
+        description: "This comprehensive suite of payment products offers a fully integrated solution for handling various payment needs.",
+        img: blogImg3,
+    },
 ]
 
 export const FAQHomeData = [

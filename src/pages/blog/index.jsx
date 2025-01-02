@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./blog.css"
 import Swipper1 from '@/components/swipper1/Swipper1';
-import { blogswipperData } from '@/data/data';
+import { blogswipperData, lastestBlog } from '@/data/data';
 import { ActionCard } from '@/components/ActionCard';
+import Card1 from '@/components/cards/Card1';
+import Head from 'next/head';
+import { FaArrowDown } from 'react-icons/fa';
+
 
 const index = () => {
+    const [visibleCount, setVisibleCount] = useState(6); // Initially show 6 cards
+
+    // Function to handle "Show More" button clicks
+    const handleShowMore = () => {
+        setVisibleCount((prevCount) => prevCount + 3); // Show 3 more cards
+    };
     return (
         <div>
+            <Head>
+                <title>Blogs</title>
+            </Head>
             <section>
                 <div className="wrapper-B1">
                     <ActionCard>
@@ -25,7 +38,45 @@ const index = () => {
             </section>
 
             <section>
-                
+                <div className="Wrapper-B3">
+                    <div className="container">
+                        <div className="wrapper-B3-cards">
+                            {lastestBlog?.slice(0, visibleCount).map((item, index) => (
+                                <Card1 key={index} data={item} />
+                            ))}
+                        </div>
+                        {visibleCount < lastestBlog?.length && (
+                            <div className="text-center ">
+                                <button onClick={handleShowMore} className="show-more-btn">
+                                    View More <FaArrowDown style={{ marginLeft: '3px' }} />
+                                </button>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div className="Wrapper-B4">
+                    <div className="container">
+                        <div className="Wrapper-B4-content">
+                            <h2>Get Foresight on the go</h2>
+                            <p className="text-center">At Fourth Industrial Revolution Inc., we are dedicated to guiding businesses through the transformative power of artificial intelligence. With a team of seasoned experts at the helm, specializing in AI consulting and product solutions, we provide tailored AI solutions that propel your business into the future. Our mission is simple yet ambitious: to empower organizations to thrive in the dynamic landscape of the Fourth Industrial Revolution.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div className="wrapepr-B5">
+                    <div className="container">
+                    <ActionCard>
+                        <ActionCard.Header title="Ready to See It in Action?" />
+                        <ActionCard.Body description="On 'The Path to Success,' you will encounter challenges and obstacles that test your resolve. But with determination and perseverance." />
+                        <ActionCard.Button label="Book a free Demo" onClick={() => alert('Demo booked!')} />
+                    </ActionCard>
+                    </div>
+                </div>
             </section>
         </div>
     )

@@ -160,17 +160,11 @@ const Index = () => {
                   <Card1 key={index} data={item} />
                 ))}
               </div>
-              <div className="button-group text-center">
-                {visibleCount < lastestBlog?.length && (
-                  <button onClick={handleViewMore} className="view-more-button">
-                    View More <FaArrowDown style={{ marginLeft: '3px' }} />
-                  </button>
-                )}
-                {visibleCount > INITIAL_VISIBLE_COUNT && (
-                  <button onClick={handleViewLess} className="view-less-button">
-                    View Less <FaArrowUp style={{ marginLeft: '3px' }} />
-                  </button>
-                )}
+              <div className='text-center'>
+
+              <button className="view-more-button">
+                View More <FaArrowDown style={{ marginLeft: '3px' }} />
+              </button>
               </div>
             </div>
           </div>

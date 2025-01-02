@@ -8,7 +8,7 @@ const Card1 = ({ data, className }) => {
     return (
         <>
             <div className={`fit-card ${className}`}>
-                <figure><Image src={data.img} alt="unsplsh_card_img" /></figure>
+                <figure><Image src={data.img} alt="img" /></figure>
                 <h4>{data.title}</h4>
                 <p>{data.description}</p>
             </div>

@@ -79,8 +79,13 @@
 }
 
 .A2-Card2 {
-    background: linear-gradient(125.44deg, rgba(255, 255, 255, 0.15) 4.5%, rgba(255, 255, 255, 0.1) 100%),
-        linear-gradient(0deg, rgba(243, 239, 255, 0), rgba(243, 239, 255, 0));
+    /* background: linear-gradient(125.44deg, rgba(255, 255, 255, 0.15) 4.5%, rgba(255, 255, 255, 0.1) 100%),
+        linear-gradient(0deg, rgba(243, 239, 255, 0), rgba(243, 239, 255, 0)); */
+        background-image: url("../../../public/images/Card_img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background: transparent; */
     border-radius: 15px;
     padding: 20px;
     flex-basis: 49%;

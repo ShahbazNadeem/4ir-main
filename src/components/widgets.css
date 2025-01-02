@@ -416,8 +416,8 @@ span {
     .Swipper1-main-slide .Swipper1-slider-content {
         width: 100%;
     }
-    .Swipper1 .swiper-nav-btns button {
-        padding: 8px;
+    .Swipper1 .swiper-nav-btns  {
+        display: none;
     }
 
 }
