@@ -4,10 +4,15 @@ import { ActionCard } from '@/components/ActionCard'
 import Image from 'next/image'
 import { contactUsData, FAQOursolutionData } from '@/data/data';
 import Accordian from '@/components/Accordian';
+import Head from 'next/head';
 
 const index = () => {
     return (
         <div>
+            <Head>
+                <title>Contact Us</title>
+            </Head>
+            
             <section>
                 <div className="wrapper-C1">
                     <ActionCard>

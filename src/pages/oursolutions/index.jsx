@@ -3,10 +3,15 @@ import "./oursolution.css"
 import { ActionCard } from '@/components/ActionCard'
 import Accordian from '@/components/Accordian'
 import { FAQOursolutionData } from '@/data/data'
+import Head from 'next/head'
 
 const index = () => {
     return (
         <div>
+            <Head>
+                <title>Our Solutions</title>
+            </Head>
+            
             <section>
                 <div className="wrapper-O1">
                     <ActionCard>

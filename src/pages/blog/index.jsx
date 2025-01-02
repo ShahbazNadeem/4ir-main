@@ -6,20 +6,21 @@ import { ActionCard } from '@/components/ActionCard';
 import Card1 from '@/components/cards/Card1';
 import Head from 'next/head';
 import { FaArrowDown } from 'react-icons/fa';
+import Layout from '@/components/layout/Layout';
 
 
 const index = () => {
-    const [visibleCount, setVisibleCount] = useState(6); // Initially show 6 cards
+    const [visibleCount, setVisibleCount] = useState(6); 
 
-    // Function to handle "Show More" button clicks
     const handleShowMore = () => {
-        setVisibleCount((prevCount) => prevCount + 3); // Show 3 more cards
+        setVisibleCount((prevCount) => prevCount + 3); 
     };
     return (
-        <div>
+        <Layout>
             <Head>
                 <title>Blogs</title>
             </Head>
+            
             <section>
                 <div className="wrapper-B1">
                     <ActionCard>
@@ -70,15 +71,15 @@ const index = () => {
             <section>
                 <div className="wrapepr-B5">
                     <div className="container">
-                    <ActionCard>
-                        <ActionCard.Header title="Ready to See It in Action?" />
-                        <ActionCard.Body description="On 'The Path to Success,' you will encounter challenges and obstacles that test your resolve. But with determination and perseverance." />
-                        <ActionCard.Button label="Book a free Demo" onClick={() => alert('Demo booked!')} />
-                    </ActionCard>
+                        <ActionCard>
+                            <ActionCard.Header title="Ready to See It in Action?" />
+                            <ActionCard.Body description="On 'The Path to Success,' you will encounter challenges and obstacles that test your resolve. But with determination and perseverance." />
+                            <ActionCard.Button label="Book a free Demo" onClick={() => alert('Demo booked!')} />
+                        </ActionCard>
                     </div>
                 </div>
             </section>
-        </div>
+        </Layout>
     )
 }
 

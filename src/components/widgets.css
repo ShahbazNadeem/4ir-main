@@ -1,3 +1,63 @@
+/* ///////////////Header//////////////////////// */
+.wrapper-Header {
+    position: fixed;
+    top: 30;
+    z-index: 1000;
+    width: 100%;
+    /* margin: 0 auto; */
+}
+
+.header-content {
+    padding: 15px;
+    top: 50px;
+    left: 160px;
+    border-radius: 128px;
+    background: #2F1A42E5;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.header-logo figure img {
+    /* width: 100%;
+    height: auto; */
+}
+
+.header-list ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 35px;
+}
+.header-list ul li p {
+    color: white !important;  
+}
+.header-button button{
+    padding: 13px 26px !important;
+}
+
+.offcanvas-button {
+    display: none;
+}
+
+/* ///////////////Footer//////////////////////// */
+
 /* ///////////////Meet The Team///////////////////// */
 .team-wrapper {
     padding-top: 50px;
@@ -192,28 +252,15 @@ span {
 }
 
 /* ///////////////Swipper1///////////////////// */
-.Swipper1 {
-    /* color: #090B0C; */
-}
-
 .Swipper1 .swiper {
     width: 100%;
     height: 100%;
     z-index: 1;
 }
 
-.Swipper1 .swiper-slide {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-}
+.Swipper1 .swiper-slide {}
 
-.Swipper1 .swiper-slide img {
-    /* display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; */
-}
+.Swipper1 .swiper-slide img {}
 
 .Swipper1 .swiper-nav-btns {
     display: flex;
@@ -373,6 +420,18 @@ span {
         margin: 0 auto;
         width: 70%;
     }
+
+    .header-list {
+        display: none;
+    }
+
+    .header-button {
+        display: none;
+    }
+
+    .offcanvas-button {
+        display: block;
+    }
 }
 
 @media (max-width: 576px) {
@@ -409,6 +468,7 @@ span {
         gap: 0px;
         padding: 30px 10px;
     }
+
     .Swipper1-main-slide .Swipper1-slider-img {
         width: 100%;
     }
@@ -416,7 +476,8 @@ span {
     .Swipper1-main-slide .Swipper1-slider-content {
         width: 100%;
     }
-    .Swipper1 .swiper-nav-btns  {
+
+    .Swipper1 .swiper-nav-btns {
         display: none;
     }
 

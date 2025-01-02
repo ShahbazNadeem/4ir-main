@@ -7,11 +7,16 @@ import Card2 from '@/components/cards/Card2';
 import MeetTheTeam from '@/components/MeetTheTeam';
 import Accordian from '@/components/Accordian';
 import { ActionCard } from '@/components/ActionCard'
+import Head from 'next/head';
 
 
 const About = () => {
   return (
     <div>
+      <Head>
+        <title>About Us</title>
+      </Head>
+
       <section>
         <div className="wrapper-A1">
           <div className="container">
