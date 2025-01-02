@@ -132,20 +132,22 @@
 
 .form-right form label select {
     width: 100%;
-    
 }
 
 .form-right form label select option {
     background: #141719;
     color: white;
 }
-.form-right .custombtn1{
+
+.form-right .custombtn1 {
     margin: 0 auto;
 }
+
 /* /////////////wrapper-C4/////////////////// */
 .wrapper-C4 {
     padding-top: 50px;
 }
+
 /* /////////////wrapper-C5/////////////////// */
 .wrapper-C5 {
     padding-top: 50px;
@@ -157,7 +159,7 @@
         gap: 10px;
         padding: 18px;
     }
-    
+
     .contact-info {
         width: 130px;
         gap: 10px;
@@ -196,35 +198,42 @@
         gap: 40px;
         padding: 20px;
     }
+
     .form-left {
         padding: 20px 30px;
         border-radius: 36px;
     }
-    .form-right h4{
+
+    .form-right h4 {
         text-align: center;
         padding: 10px 0px;
     }
-    .contact-info-container{
+
+    .contact-info-container {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
     }
-    .contact-info{
+
+    .contact-info {
         align-items: center;
         justify-content: center;
     }
 }
+
 @media (max-width: 576px) {
     .form-left {
         padding: 14px 23px;
         border-radius: 20px;
     }
+
     .contact-info {
         align-items: center;
         justify-content: start;
         width: 170px;
     }
+
     .label-group {
         flex-direction: column;
     }

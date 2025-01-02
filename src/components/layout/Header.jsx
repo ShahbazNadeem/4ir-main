@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../widgets.css"
 import Image from 'next/image'
 import Logo from "@/images/Logo.png"
+import { navbarData } from '@/data/layoutData'
 
 const Header = () => {
+
   return (
     <section>
       <div className="wrapper-Header">
@@ -15,16 +17,42 @@ const Header = () => {
                 <Image src={Logo} />
               </figure>
             </div>
+
             <div className="header-list">
               <ul>
-                <li>Home</li>
-                <li>About 4IR</li>
-                <li>Our Solutions</li>
-                <li>Industries</li>
-                <li>Blog</li>
-                <li>Contact us</li>
+                {navbarData?.map((item, index) => (
+                  <li key={index}>
+                    {item.list && item.list.length > 0 ? (
+                      <a
+                        href={item.link}
+                        className="btn btn-secondary dropdown-toggle"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        {item.title}
+                      </a>
+                    ) : (
+                      <span className="simple-text">{item.title}</span>
+                    )}
+                    {item.list && item.list.length > 0 && (
+                      <div className="dropdown-menu">
+                        {item.list.map((listItem, index) => (
+                          <a
+                            key={index}
+                            className="dropdown-item"
+                            href={listItem.listlink}
+                          >
+                            {listItem.listItem}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </li>
+                ))}
               </ul>
             </div>
+
             <div className="header-button">
               <button className='btn1'>Book A Free Demo</button>
             </div>

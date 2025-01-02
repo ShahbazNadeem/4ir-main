@@ -8,7 +8,7 @@
 }
 
 .header-content {
-    padding: 15px;
+    padding: 15px 15px 12px 15px;
     top: 50px;
     left: 160px;
     border-radius: 128px;
@@ -23,6 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 .header-logo figure {
@@ -38,23 +39,76 @@
     height: auto; */
 }
 
+.header-list {
+    margin-top: 10px;
+}
+
 .header-list ul {
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
-    gap: 35px;
+    gap: 25px;
 }
+
+.header-list .input {
+    width: 120px;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.header-list .input option {
+    background: #141719;
+    color: white;
+}
+
 .header-list ul li p {
-    color: white !important;  
+    color: white !important;
 }
-.header-button button{
+
+.header-button button {
     padding: 13px 26px !important;
 }
 
 .offcanvas-button {
     display: none;
 }
+
+.header-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header-list li {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.dropdown-menu {
+    margin-top: 10px !important;
+    padding: 10px;
+    background-color: black;
+    border: none;
+    position: absolute;
+    z-index: 10;
+}
+
+.dropdown-menu a {
+    color: white;
+    margin: 10px 0px;
+    padding: 5px !important;
+}
+
+.dropdown-menu a:hover {
+    background-color: #4A256B;
+    color: white;
+}
+
+
+
 
 /* ///////////////Footer//////////////////////// */
 
