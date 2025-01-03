@@ -84,10 +84,13 @@
 
 .header-list li {
     cursor: pointer;
-    margin-bottom: 10px;
+}
+.simple-text{
+    color: white !important;
+    text-decoration: none;
 }
 
-.dropdown-menu {
+.header-list ul li .dropdown-menu {
     margin-top: 10px !important;
     padding: 10px;
     background-color: black;
@@ -107,6 +110,9 @@
     color: white;
 }
 
+.header-top-button{
+    display: none;
+}
 
 
 
@@ -398,6 +404,12 @@ span {
     .Swipper1 .swiper-nav-btns {
         gap: 70px;
     }
+    .header-button button {
+        padding: 13px 13px !important;
+    }
+    .header-list ul {
+        gap: 20px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -427,6 +439,24 @@ span {
     .Swipper1 .swiper-nav-btns {
         gap: 64px;
     }
+    .header-top-button{
+        display: block;
+    }
+    .header-list {
+        display: none;
+    }
+    
+    .offcanvas-button {
+        display: block;
+    }
+    .offcanvas-button button{
+        background: transparent;
+        border: none;
+        color: white;
+    }
+    .header-content {
+        padding: 7px 15px 5px 25px;}
+
 }
 
 @media (max-width: 768px) {
@@ -474,18 +504,14 @@ span {
         margin: 0 auto;
         width: 70%;
     }
+    .header-content{
 
-    .header-list {
-        display: none;
+        padding: 8px 28px 6px 28px;
     }
 
-    .header-button {
-        display: none;
-    }
+    
 
-    .offcanvas-button {
-        display: block;
-    }
+    
 }
 
 @media (max-width: 576px) {
@@ -534,5 +560,15 @@ span {
     .Swipper1 .swiper-nav-btns {
         display: none;
     }
+    .header-top-button{
+        display: none;
+    }
+    .header-button {
+        display: none;
+    }
 
+    .header-content{
+        flex-direction: row-reverse;
+        padding: 2px 14px 0px 14px;
+    }
 }
