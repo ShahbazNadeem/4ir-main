@@ -34,11 +34,6 @@
     height: auto;
 }
 
-.header-logo figure img {
-    /* width: 100%;
-    height: auto; */
-}
-
 .header-list {
     margin-top: 10px;
 }
@@ -113,7 +108,20 @@
 .header-top-button{
     display: none;
 }
-
+.header-canvas .offcanvas{
+    background: #2F1A42E5;
+    backdrop-filter: blur(5px);
+    color: white;
+}
+.header-canvas .offcanvas .offcanvas-header{
+    display: flex;
+    justify-content: space-between;
+}
+.header-canvas .offcanvas .offcanvas-header button{
+    color: white ;
+    border: none;
+    background: transparent;
+}
 
 
 /* ///////////////Footer//////////////////////// */

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Logo from "@/images/Logo.png"
 import { navbarData } from '@/data/layoutData'
 import { TiThMenu } from "react-icons/ti";
-import { IoIosMenu } from "react-icons/io";
+import { IoIosMenu, IoMdClose  } from "react-icons/io";
 
 
 const Header = () => {
@@ -16,7 +16,7 @@ const Header = () => {
           <div className="header-content">
 
             <div className="offcanvas-button">
-              <button><IoIosMenu size={30}/></button>
+              <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><IoIosMenu size={30} /></button>
             </div>
 
 
@@ -71,7 +71,20 @@ const Header = () => {
 
 
 
-          <div className="header-canvas"></div>
+          <div className="header-canvas">
+            <div className="offcanvas offcanvas-start" tabIndex={-1} id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div className="offcanvas-header">
+                <h2 className="offcanvas-title" id="offcanvasExampleLabel">4-IR</h2>
+                <button type="button"  data-bs-dismiss="offcanvas" aria-label="Close" ><IoMdClose size={25}/></button>
+              </div>
+              <div className="offcanvas-body">
+                <div>
+                  Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
