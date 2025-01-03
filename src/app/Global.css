@@ -71,6 +71,9 @@ p {
   line-height: 24px;
   color: var(--primary);
 }
+ol, ul {
+  padding : 0px !important;
+}
 
 .margin-top {
   margin-top: 20px;

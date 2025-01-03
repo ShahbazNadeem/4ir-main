@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Logo from "@/images/Logo.png"
 import { navbarData } from '@/data/layoutData'
 import { TiThMenu } from "react-icons/ti";
-import { IoIosMenu, IoMdClose  } from "react-icons/io";
+import { IoIosMenu, IoMdClose } from "react-icons/io";
 
 
 const Header = () => {
@@ -75,12 +75,47 @@ const Header = () => {
             <div className="offcanvas offcanvas-start" tabIndex={-1} id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
               <div className="offcanvas-header">
                 <h2 className="offcanvas-title" id="offcanvasExampleLabel">4-IR</h2>
-                <button type="button"  data-bs-dismiss="offcanvas" aria-label="Close" ><IoMdClose size={25}/></button>
+                <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" ><IoMdClose size={25} /></button>
               </div>
               <div className="offcanvas-body">
-                <div>
-                  Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+
+
+                <div className="offcanvas-list">
+                  <ul>
+                    {navbarData?.map((item, index) => (
+                      <li key={index}>
+                        {item.list && item.list.length > 0 ? (
+                          <a
+                            href={item.link}
+                            className="simple-text dropdown-toggle"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            {item.title}
+                          </a>
+                        ) : (
+                          <span className="simple-text">{item.title}</span>
+                        )}
+                        {item.list && item.list.length > 0 && (
+                          <div className="dropdown-menu">
+                            {item.list.map((listItem, index) => (
+                              <a
+                                key={index}
+                                className="dropdown-item"
+                                href={listItem.listlink}
+                              >
+                                {listItem.listItem}
+                              </a>
+                            ))}
+                          </div>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
+
+
               </div>
             </div>
           </div>

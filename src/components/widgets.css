@@ -114,6 +114,7 @@
     color: white;
 }
 .header-canvas .offcanvas .offcanvas-header{
+    padding: 40px 40px;
     display: flex;
     justify-content: space-between;
 }
@@ -121,6 +122,19 @@
     color: white ;
     border: none;
     background: transparent;
+}
+.header-canvas .offcanvas-body {
+    padding: 0px 40px;
+}
+.header-canvas .offcanvas-list ul{
+    list-style: none;
+    display: flex;
+
+    flex-direction: column;
+    gap: 20px;
+}
+.header-canvas .offcanvas-list .simple-text{
+    font-size: 16px ;
 }
 
 
