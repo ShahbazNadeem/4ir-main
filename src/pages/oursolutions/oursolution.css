@@ -1,6 +1,6 @@
 /* /////////////////wrapper-O1//////////////// */
 .wrapper-O1 .action-card {
-    padding-top: 120px !important;
+    padding-top: 180px !important;
     border-radius: 0px !important;
     max-width: 1824px;
     margin: 0 auto;
@@ -73,6 +73,9 @@
 }
 
 @media (max-width: 576px) {
+    .wrapper-O1 .action-card {
+        padding-top: 140px !important;
+    }
     .action-card .action-card-item {
         width: 300px !important;
     }

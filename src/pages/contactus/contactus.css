@@ -1,6 +1,6 @@
 /* /////////////wrapper-C1/////////////////// */
 .wrapper-C1 .action-card {
-    padding-top: 120px !important;
+    padding-top: 180px !important;
     border-radius: 0px !important;
     max-width: 1916px;
     margin: 0 auto;
@@ -223,6 +223,9 @@
 }
 
 @media (max-width: 576px) {
+    .wrapper-C1 .action-card {
+        padding-top: 140px !important;
+    }
     .form-left {
         padding: 14px 23px;
         border-radius: 20px;

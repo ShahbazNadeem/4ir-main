@@ -14,6 +14,7 @@ import { FaArrowDown, FaArrowUp } from "react-icons/fa";
 import Accordian from '@/components/Accordian'
 import { ActionCard } from '@/components/ActionCard'
 import Head from 'next/head'
+import Layout from '@/components/layout/Layout';
 
 const Index = () => {
   const INITIAL_VISIBLE_COUNT = 3;
@@ -27,7 +28,7 @@ const Index = () => {
     setVisibleCount(INITIAL_VISIBLE_COUNT);
   };
   return (
-    <div>
+    <Layout>
        <Head>
         <title>4IR - AI Talk Assist</title>
       </Head>
@@ -191,7 +192,7 @@ const Index = () => {
         </div>
       </section>
 
-    </div>
+    </Layout>
   )
 }
 

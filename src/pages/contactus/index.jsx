@@ -5,14 +5,16 @@ import Image from 'next/image'
 import { contactUsData, FAQOursolutionData } from '@/data/data';
 import Accordian from '@/components/Accordian';
 import Head from 'next/head';
+import Layout from '@/components/layout/Layout';
+
 
 const index = () => {
     return (
-        <div>
+        <Layout>
             <Head>
                 <title>Contact Us</title>
             </Head>
-            
+
             <section>
                 <div className="wrapper-C1">
                     <ActionCard>
@@ -117,7 +119,7 @@ const index = () => {
             <section>
                 <div className="wrapper-C4">
                     <div className="container">
-                    <Accordian data={FAQOursolutionData} />
+                        <Accordian data={FAQOursolutionData} />
                     </div>
                 </div>
             </section>
@@ -126,14 +128,14 @@ const index = () => {
                 <div className="wrapper-C5">
                     <div className="container">
                         <ActionCard>
-                        <ActionCard.Header title="Ready to See It in Action?" />
-                        <ActionCard.Body description="On 'The Path to Success,' you will encounter challenges and obstacles that test your resolve. But with determination and perseverance." />
-                        <ActionCard.Button label="Book a free Demo" onClick={() => console.log('Learn More')} />
+                            <ActionCard.Header title="Ready to See It in Action?" />
+                            <ActionCard.Body description="On 'The Path to Success,' you will encounter challenges and obstacles that test your resolve. But with determination and perseverance." />
+                            <ActionCard.Button label="Book a free Demo" onClick={() => console.log('Learn More')} />
                         </ActionCard>
                     </div>
                 </div>
             </section>
-        </div>
+        </Layout>
     )
 }
 

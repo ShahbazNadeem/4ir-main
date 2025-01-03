@@ -29,9 +29,8 @@
 
 /* ------------------------------------- */
 .wrapper-banner {
-    /* border: 1px solid blue; */
     display: flex;
-    padding-top: 150px;
+    padding-top: 250px;
 }
 
 .banner-span-top {
@@ -306,6 +305,9 @@
 }
 
 @media (max-width: 992px) {
+    .wrapper-banner {
+        padding-top: 220px;
+    }
     .wrapper-2nd{
         padding-top: 40px;
     }
@@ -348,6 +350,9 @@
 }
 
 @media (max-width: 768px) {
+    .wrapper-banner {
+        padding-top: 180px;
+    }
     .industry {
         flex-basis: 47%;
         padding: 14px;
@@ -405,6 +410,9 @@
 }
 
 @media (max-width: 576px) {
+    .wrapper-banner {
+        padding-top: 140px;
+    }
     .industry {
         padding: 15px 5px;
     }

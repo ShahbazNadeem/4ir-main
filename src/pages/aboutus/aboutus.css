@@ -1,6 +1,6 @@
 /* //////////////wrapper-A1/////////////// */
 .wrapper-A1 {
-    padding: 50px 0px;
+    padding: 200px 0px;
 }
 
 .wrapper-A1-content {
@@ -147,6 +147,9 @@
 }
 
 @media (max-width: 992px) {
+    .wrapper-A1 {
+        padding: 180px 0px;
+    }
     .wrapper-A1-content h1 {
         line-height: 66px !important;
     }
@@ -182,7 +185,6 @@
 }
 
 @media (max-width: 768px) {
-
     .wrapper-A1-content {
         flex-direction: column;
         align-items: center;
@@ -224,6 +226,9 @@
 }
 
 @media (max-width: 576px) {
+    .wrapper-A1 {
+        padding: 140px 0px;
+    }
     .wrapper-A1-content h1 {
         line-height: 40px !important;
     }

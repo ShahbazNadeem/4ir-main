@@ -8,11 +8,12 @@ import MeetTheTeam from '@/components/MeetTheTeam';
 import Accordian from '@/components/Accordian';
 import { ActionCard } from '@/components/ActionCard'
 import Head from 'next/head';
+import Layout from '@/components/layout/Layout';
 
 
 const About = () => {
   return (
-    <div>
+    <Layout>
       <Head>
         <title>About Us</title>
       </Head>
@@ -112,7 +113,7 @@ const About = () => {
           </div>
         </div>
       </section>
-    </div>
+    </Layout>
   )
 }
 
