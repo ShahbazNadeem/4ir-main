@@ -98,6 +98,7 @@
     color: white;
     margin: 10px 0px;
     padding: 5px !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dropdown-menu a:hover {
@@ -114,7 +115,7 @@
     color: white;
 }
 .header-canvas .offcanvas .offcanvas-header{
-    padding: 40px 40px;
+    padding: 40px 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -122,6 +123,11 @@
     color: white ;
     border: none;
     background: transparent;
+}
+.offcanvas-body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .header-canvas .offcanvas-body {
     padding: 0px 40px;
@@ -134,15 +140,72 @@
     gap: 20px;
 }
 .header-canvas .offcanvas-list .simple-text{
-    font-size: 16px ;
+    font-size: 20px ;
+}
+.header-canvas .dropdown-menu {
+    margin-top: 10px !important;
+    padding: 10px;
+    background-color: black;
+    border: none;
+    position: absolute;
+    z-index: 10;
+}
+.header-canvas .dropdown-menu a {
+    color: white;
+    margin: 10px 0px;
+    padding: 5px !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header-canvas .dropdown-menu a:hover {
+    background-color: #4A256B;
+    color: white;
+}
+/* ///////////////Footer//////////////////////// */
+.wrapper-footer{
+    border: 1px solid #707070;
+    padding: 50px 0px;
+}
+.footer-main{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 70px; */
+    opacity: 0px;
+    
+}
+.footer-1Section{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-2Section{
+    flex-basis: 70%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid #707070; */
+    padding-left: 100px;
+}
+.footer-sub-div{
+    flex-basis: fit-content;
+}
+.footer-logo , .page-links, .resources, .contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.footer-logo{
+    flex-basis: 81%;
+}
+.footer-bottom{
+    margin-top: 30px;
+    border-top: 1px solid #222222
 }
 
 
-/* ///////////////Footer//////////////////////// */
-
 /* ///////////////Meet The Team///////////////////// */
 .team-wrapper {
-    padding-top: 50px;
+    padding: 50px 0px 0px 0px;
 }
 
 .team-content {

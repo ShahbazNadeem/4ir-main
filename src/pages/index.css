@@ -24,7 +24,7 @@
 }
 
 .industry:hover {
-    background: linear-gradient(135deg, rgba(196,0,255,1) 1%, rgba(136,0,255,1) 84%, rgba(136,0,255,1) 100%);
+    background: linear-gradient(135deg, rgba(196, 0, 255, 1) 1%, rgba(136, 0, 255, 1) 84%, rgba(136, 0, 255, 1) 100%);
 }
 
 /* ------------------------------------- */
@@ -59,7 +59,7 @@
     padding: 4px 20px;
     border-radius: 50px;
     gap: 8px;
-    margin: 0px 8px ;
+    margin: 0px 8px;
 }
 
 
@@ -104,6 +104,7 @@
     left: -20;
     width: 100%;
 }
+
 .banner-image figure {
     position: absolute;
     width: 70%;
@@ -116,6 +117,7 @@
     width: 100%;
     height: auto;
 }
+
 /* ------------------------------------- */
 .wrapper-2nd {
     display: flex;
@@ -133,6 +135,7 @@
     width: 100%;
     height: auto;
 }
+
 .revolution-img img {
     width: 100%;
     height: auto;
@@ -200,6 +203,68 @@
 }
 
 /* ------------------------------------- */
+.wrapper-6th {
+    overflow-x: hidden !important;
+    padding: 50px 0px;
+    border: 1px solid red;
+}
+
+.wrapper-6th-content {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 100px;
+    /* top: 50%; */
+}
+
+.wrapper-6th-content h2 {
+    border: 1px solid blue;
+    font-size: 148px !important;
+    font-weight: 400 !important;
+    line-height: 60px !important;
+    letter-spacing: -0.02em !important;
+}
+
+.wrapper-6th-animationCard {
+    width: 343px;
+    height: 450px;
+    position: absolute;
+    top: 2 0%;
+    /* left: 50% ; */
+    padding: 45px 17px;
+    border-radius: 13px;
+    background: linear-gradient(0deg, #262626, #262626),
+    radial-gradient(366.83% 228.36% at 4.17% 2.3%, rgba(200, 0, 164, 0) 0%, rgba(132, 0, 250, 0.176) 100%);
+}
+.wrapper-6th-animationCard img{
+    width: 100%;
+    height: auto;
+}
+
+
+.wrapper6custom-1 {
+    rotate: 10deg !important;
+}
+
+.wrapper6custom-2 {
+    rotate: 20deg !important;
+}
+
+.wrapper6custom-3 {
+    rotate: 0deg !important;
+}
+
+.wrapper6custom-4 {
+    rotate: 10deg !important;
+}
+
+
+
+
+/* ------------------------------------- */
 .wrapper-7th {
     background-color: #8700FF1A;
     padding: 50px 0px;
@@ -224,17 +289,21 @@
 .wrapper-9th {
     padding-top: 50px;
 }
-.box-9th-wrapper .fit-card{
+
+.box-9th-wrapper .fit-card {
     border: 1px solid #989898;
 }
-.box-9th-wrapper{
+
+.box-9th-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 22px;
     padding-top: 50px;
 }
-.view-more-button,.view-less-button {
+
+.view-more-button,
+.view-less-button {
     margin: 10px 5px;
     padding: 10px 20px;
     background-color: #090B0C;
@@ -244,23 +313,25 @@
     cursor: pointer;
     font-size: 16px;
 }
+
 /* ------------------------------------- */
-.wrapper-10th{
+.wrapper-10th {
     padding-top: 50px;
 }
 
-.wrapper-11th{
-    padding: 50px 0px ;
+.wrapper-11th {
+    padding: 50px 0px;
 }
+
 @media (min-width: 1400px) {
-    .wrapper-2nd{
-        padding-top:80px ;
+    .wrapper-2nd {
+        padding-top: 80px;
     }
 }
 
 @media (max-width: 1399px) {
-    .wrapper-2nd{
-        padding-top:80px ;
+    .wrapper-2nd {
+        padding-top: 80px;
     }
 }
 
@@ -308,9 +379,11 @@
     .wrapper-banner {
         padding-top: 220px;
     }
-    .wrapper-2nd{
+
+    .wrapper-2nd {
         padding-top: 40px;
     }
+
     .industry {
         padding: 18px;
     }
@@ -342,10 +415,14 @@
     .wrapper-7th-content {
         width: 85%;
     }
+
     .banner-image .figure1 {
         position: absolute;
         top: -45px;
         left: -10;
+    }
+    .wrapper-6th-content h2 {
+        font-size: 120px !important;
     }
 }
 
@@ -353,6 +430,7 @@
     .wrapper-banner {
         padding-top: 180px;
     }
+
     .industry {
         flex-basis: 47%;
         padding: 14px;
@@ -407,12 +485,16 @@
     .wrapper-7th-content {
         width: 100%;
     }
+    .wrapper-6th-content h2 {
+        font-size: 90px !important;
+    }
 }
 
 @media (max-width: 576px) {
     .wrapper-banner {
         padding-top: 140px;
     }
+
     .industry {
         padding: 15px 5px;
     }
@@ -438,5 +520,12 @@
     .fit-card {
         flex-basis: 48%;
         padding: 8px 8px;
+    }
+    .wrapper-6th-animationCard{
+        width: 143px;
+    height: 250px;
+    }
+    .wrapper-6th-content h2 {
+        font-size: 50px !important;
     }
 }

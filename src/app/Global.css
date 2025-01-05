@@ -23,10 +23,16 @@
   /* --font-play: "Play", sans-serif; */
 }
 
+::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar in WebKit browsers (Chrome, Safari) */
+}
 body {
   font-family: Instrument Sans;
   background-color: var(--body) !important;
   color: white !important;
+  overflow-x: hidden !important;
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hides scrollbar in older IE/Edge */
 }
 
 .container {
@@ -65,14 +71,23 @@ h4 {
   line-height: 30px !important;
 }
 
+h5 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
 p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: var(--primary);
 }
-ol, ul {
-  padding : 0px !important;
+
+ol,
+ul {
+  padding: 0px !important;
+  list-style: none !important;
 }
 
 .margin-top {

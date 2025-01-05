@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useLayoutEffect, useRef } from 'react'
 import Image from 'next/image'
 import "./index.css"
 import robot from "@/images/robot.png"
@@ -7,7 +7,7 @@ import whatis4IR from "@/images/what-is-4IR-1.png"
 import voiceanimate from "@/images/voiceanimate.png"
 import Logo2_4ir from "@/images/4IR-Logo2.png"
 import MeetTheTeam from '@/components/MeetTheTeam'
-import { IndustrySpecificSolutions, howToFitData, homeBannerlist, lastestBlog, FAQHomeData, ActionCarddata1 } from '@/data/data'
+import { IndustrySpecificSolutions, howToFitData, homeBannerlist, lastestBlog, FAQHomeData, ActionCarddata1, homeSolutionData } from '@/data/data'
 import { AiFillCheckCircle } from "react-icons/ai";
 import Card1 from '@/components/cards/Card1'
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
@@ -15,21 +15,51 @@ import Accordian from '@/components/Accordian'
 import { ActionCard } from '@/components/ActionCard'
 import Head from 'next/head'
 import Layout from '@/components/layout/Layout';
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Index = () => {
-  const INITIAL_VISIBLE_COUNT = 3;
-  const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE_COUNT);
+  const wrapper6th = useRef();
 
-  const handleViewMore = () => {
-    setVisibleCount((prevCount) => prevCount + 3);
-  };
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        ".wrapper-6th-animationCard",
+        {
+          y: 0,
+          x: 0,
+          rotate: 0,
+        },
+        {
+          y: -1000,
+          x: -200,
+          delay: 1,
+          rotate: -90,
+          stagger: {
+            each: 2,
+            from: "start",
+          },
+          duration: 2,
+          ease: "power3.inOut",
+          scrollTrigger: {
+            start: "top top",
+            end: "bottom top", 
+            // markers: true, 
+            trigger: wrapper6th.current,
+            pin: true,
+            scrub: 1,
+          },
+        }
+      );
+    }, wrapper6th);
 
-  const handleViewLess = () => {
-    setVisibleCount(INITIAL_VISIBLE_COUNT);
-  };
+    return () => ctx.revert();
+  }, []);
   return (
     <Layout>
-       <Head>
+      <Head>
         <title>4IR - AI Talk Assist</title>
       </Head>
       <section className="banner-header">
@@ -41,7 +71,7 @@ const Index = () => {
                 EMPOWER YOUR BUSINESS WITH
                 <span className="banner-span-1">
                   <Image src={Logo2_4ir} alt={Logo2_4ir} />
-                  AI-DRIVEN 
+                  AI-DRIVEN
                 </span>
                 SUCCESS
               </h1>
@@ -111,16 +141,43 @@ const Index = () => {
                 howToFitData?.map((item) => (
                   <Card1 data={item} className="fit-card-hover" />
                 ))
-
               }
             </div>
-            {/* <Card1 data={howToFitData} /> */}
           </div>
         </div>
       </section>
 
       <section>
-        <div className="wrapper-7th"> 
+        <div className='wrapper-6th'>
+          <div className='container'>
+            <div ref={wrapper6th} className='wrapper-6th-content'>
+              <h2>Our Solutions</h2>
+              <button className='btn1'>Learn More</button>
+              {
+                homeSolutionData?.map((items, Index) => (
+                  <div
+                    className={`wrapper-6th-animationCard  wrapper6custom-${Index}`}
+                    key={Index}
+                    style={{
+                      zIndex: homeSolutionData.length - Index,
+                      transform: `rotate(${Index * -100}deg)`
+                    }}
+                  >
+                    <figure>
+                      <Image src={items.img} alt={`Image for ${items.title}`}/>
+                    </figure>
+                    <h3>{items.title}</h3>
+                    <p>{items.para}</p>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="wrapper-7th">
           <div className="container">
             <div className="wrapper-7th-content">
               <h2>Why Choose us?</h2>
@@ -157,15 +214,15 @@ const Index = () => {
             <h2 className="text-center">Latest Blog</h2>
             <div>
               <div className="box-9th-wrapper">
-                {lastestBlog?.slice(0, visibleCount).map((item, index) => (
+                {lastestBlog?.slice(0, 3).map((item, index) => (
                   <Card1 key={index} data={item} />
                 ))}
               </div>
               <div className='text-center'>
 
-              <button className="view-more-button">
-                View More <FaArrowDown style={{ marginLeft: '3px' }} />
-              </button>
+                <button className="view-more-button">
+                  View More <FaArrowDown style={{ marginLeft: '3px' }} />
+                </button>
               </div>
             </div>
           </div>
@@ -186,7 +243,7 @@ const Index = () => {
             <ActionCard>
               <ActionCard.Header title="Ready to See It in Action?" />
               <ActionCard.Body description="On 'The Path to Success,' you will encounter challenges and obstacles that test your resolve. But with determination and perseverance." />
-                <ActionCard.Button label="Book a free Demo" onClick={() => alert('Demo booked!')} />
+              <ActionCard.Button label="Book a free Demo" onClick={() => alert('Demo booked!')} />
             </ActionCard>
           </div>
         </div>

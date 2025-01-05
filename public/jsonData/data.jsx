@@ -439,7 +439,7 @@ export const contactUsData = [
         id: 1,
         icon: Phone,
         title: "636 174 914 ",
-        title2:"705-323-9264",
+        title2: "705-323-9264",
     },
     {
         id: 2,
@@ -489,5 +489,44 @@ export const blogswipperData = [
         title: "Activities Improve Mind",
         description: "This comprehensive suite of payment products offers a fully integrated solution for handling various payment needs.",
         img: blogImg3,
+    },
+]
+
+export const homeSolutionData = [
+    {
+        id: 1,
+        title: "AI Talk Assist",
+        para: "Let AI handle your conversations, so you can focus on what matters.",
+        img: unsplsh_card_img,
+    },
+    {
+        id: 2,
+        title: "AI Lead Generation",
+        para: " Find more customers and close more deals, automatically.",
+        img: unsplsh_card_img,
+    },
+    {
+        id: 3,
+        title: "Strategic Counseling",
+        para: "Get expert advice to overcome challenges and seize opportunities.",
+        img: unsplsh_card_img,
+    },
+    {
+        id: 4,
+        title: "Advanced Training Programs",
+        para: "Empower your team to reach new heights.",
+        img: unsplsh_card_img,
+    },
+    {
+        id: 5,
+        title: "Business Growth Strategies",
+        para: "Accelerate your business growth with proven strategies.",
+        img: unsplsh_card_img,
+    },
+    {
+        id: 1,
+        title: "AI Appointment Marketing",
+        para: "Simplify your scheduling and boost productivity.",
+        img: unsplsh_card_img,
     },
 ]
