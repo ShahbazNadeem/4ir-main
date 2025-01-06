@@ -59,7 +59,7 @@ const Index = () => {
 
     return () => ctx.revert();
   }, []);
-  
+
   return (
     <Layout>
       <Head>

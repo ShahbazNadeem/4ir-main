@@ -16,7 +16,7 @@ const Footer = () => {
         <section>
           <div className="wrapper-footer">
             <div className="container">
-              <div className="footer-main">
+              <div className="footer-main bg-info">
 
                 <div className="footer-1Section">
                   <div className="footer-logo">
