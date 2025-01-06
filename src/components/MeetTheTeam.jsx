@@ -20,7 +20,6 @@ const MeetTheTeam = () => {
                             teamData.map((item) => (
                                 <div className="img-card" key={item.id}>
                                     <div className="img-card-img">
-                                        {/* <img src={item.img} alt={item.name} /> */}
                                     </div>
                                     <div className="img-card-content">
                                         <h3>{item.name}</h3>

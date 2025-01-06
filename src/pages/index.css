@@ -206,7 +206,6 @@
 .wrapper-6th {
     overflow-x: hidden !important;
     padding: 50px 0px;
-    border: 1px solid red;
 }
 
 .wrapper-6th-content {
@@ -221,7 +220,6 @@
 }
 
 .wrapper-6th-content h2 {
-    border: 1px solid blue;
     font-size: 148px !important;
     font-weight: 400 !important;
     line-height: 60px !important;
@@ -231,15 +229,15 @@
 .wrapper-6th-animationCard {
     width: 343px;
     height: 450px;
-    position: absolute;
-    top: 2 0%;
-    /* left: 50% ; */
     padding: 45px 17px;
+    position: absolute;
+    top: 20%;
     border-radius: 13px;
     background: linear-gradient(0deg, #262626, #262626),
-    radial-gradient(366.83% 228.36% at 4.17% 2.3%, rgba(200, 0, 164, 0) 0%, rgba(132, 0, 250, 0.176) 100%);
+        radial-gradient(366.83% 228.36% at 4.17% 2.3%, rgba(200, 0, 164, 0) 0%, rgba(132, 0, 250, 0.176) 100%);
 }
-.wrapper-6th-animationCard img{
+
+.wrapper-6th-animationCard img {
     width: 100%;
     height: auto;
 }
@@ -370,6 +368,12 @@
         line-height: 20.28px;
     }
 
+    .wrapper-6th-animationCard {
+        width: 300px;
+        height: 400px;
+        padding: 30px 18px;
+    }
+
     .wrapper-7th-content {
         width: 77%;
     }
@@ -421,8 +425,16 @@
         top: -45px;
         left: -10;
     }
+
     .wrapper-6th-content h2 {
         font-size: 120px !important;
+    }
+
+    .wrapper-6th-animationCard {
+        top: 30%;
+        width: 260px;
+        height: 360px;
+        padding: 20px 16px;
     }
 }
 
@@ -476,8 +488,9 @@
         gap: 10px;
     }
 
-    .fit-card {
-        flex-basis: 32%;
+    .box-4th-wrapper .fit-card {
+        /* flex-basis: 32%; */
+        flex-basis: 47%;
         padding: 10px 10px;
         gap: 10px;
     }
@@ -485,8 +498,18 @@
     .wrapper-7th-content {
         width: 100%;
     }
+    .wrapper-7th-content p {
+        line-height: 30px;
+    }
+
     .wrapper-6th-content h2 {
         font-size: 90px !important;
+    }
+
+    .wrapper-6th-animationCard {
+        width: 230px;
+        height: 300px;
+        padding: 20px 16px;
     }
 }
 
@@ -496,7 +519,7 @@
     }
 
     .industry {
-        padding: 15px 5px;
+        padding: 5px 5px;
     }
 
     .banner-span-1 {
@@ -517,15 +540,21 @@
         font-size: 16px;
     }
 
-    .fit-card {
-        flex-basis: 48%;
+    .box-4th-wrapper .fit-card {
+        flex-basis: 100%;
         padding: 8px 8px;
     }
-    .wrapper-6th-animationCard{
-        width: 143px;
-    height: 250px;
+
+    .wrapper-6th-animationCard {
+        width: 190px;
+        height: 290px;
+        padding: 10px;
     }
+
     .wrapper-6th-content h2 {
-        font-size: 50px !important;
+        font-size: 40px !important;
+    }
+    .wrapper-7th-content p {
+        line-height: 25px;
     }
 }

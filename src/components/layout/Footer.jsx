@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div>
       <footer>
-        <section>
+        {/* <section>
           <div className="wrapper-footer">
             <div className="container">
               <div className="footer-main">
@@ -79,7 +79,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </footer>
     </div>
   )

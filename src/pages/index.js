@@ -31,12 +31,14 @@ const Index = () => {
           y: 0,
           x: 0,
           rotate: 0,
+          opacity: 1,
         },
         {
           y: -1000,
           x: -200,
           delay: 1,
           rotate: -90,
+          opacity: 0,
           stagger: {
             each: 2,
             from: "start",
@@ -45,7 +47,7 @@ const Index = () => {
           ease: "power3.inOut",
           scrollTrigger: {
             start: "top top",
-            end: "bottom top", 
+            end: "bottom top",
             // markers: true, 
             trigger: wrapper6th.current,
             pin: true,
@@ -57,6 +59,7 @@ const Index = () => {
 
     return () => ctx.revert();
   }, []);
+  
   return (
     <Layout>
       <Head>
@@ -164,7 +167,7 @@ const Index = () => {
                     }}
                   >
                     <figure>
-                      <Image src={items.img} alt={`Image for ${items.title}`}/>
+                      <Image src={items.img} alt={`Image for ${items.title}`} />
                     </figure>
                     <h3>{items.title}</h3>
                     <p>{items.para}</p>
