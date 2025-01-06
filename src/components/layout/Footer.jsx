@@ -14,10 +14,9 @@ const Footer = () => {
     <div>
       <footer>
         <section>
-          hh
-          {/* <div className="wrapper-footer">
+          <div className="wrapper-footer">
             <div className="container">
-              <div className="footer-main bg-info">
+              <div className="footer-main">
 
                 <div className="footer-1Section">
                   <div className="footer-logo">
@@ -82,7 +81,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
         </section>
       </footer>
     </div>
