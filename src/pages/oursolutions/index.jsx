@@ -2,9 +2,10 @@ import React from 'react'
 import "./oursolution.css"
 import { ActionCard } from '@/components/ActionCard'
 import Accordian from '@/components/Accordian'
-import { FAQOursolutionData } from '@/data/data'
+import { aboutusReviews, FAQOursolutionData } from '@/data/data'
 import Head from 'next/head'
 import Layout from '@/components/layout/Layout';
+import Swipper2 from '@/components/Swipper2'
 
 const index = () => {
     return (
@@ -12,7 +13,7 @@ const index = () => {
             <Head>
                 <title>Our Solutions</title>
             </Head>
-            
+
             <section>
                 <div className="wrapper-O1">
                     <ActionCard>
@@ -29,6 +30,15 @@ const index = () => {
                             <h2>Our Solutions</h2>
                             <p>At 4IR Inc., we offer a comprehensive suite of AI-powered solutions to help you achieve your business goals. Our solutions are designed to streamline operations, enhance customer experiences, and drive growth.</p>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div className="wrapper-O3">
+                    <div className="container">
+                        <h2>Client Reviews</h2>
+                        <Swipper2 data={aboutusReviews} />
                     </div>
                 </div>
             </section>

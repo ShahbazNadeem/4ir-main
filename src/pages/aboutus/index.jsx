@@ -1,14 +1,15 @@
 import React from 'react'
 import "./aboutus.css"
 import Image from 'next/image'
-import actioncardImg from "@/images/actioncardImg.png";
-import { aboutuscard1, aboutuscard2, FAQAboutData } from '@/data/data';
+import entrepreneurImg from "@/images/entrepreneurImg.png";
+import { aboutuscard1, aboutuscard2, FAQAboutData, aboutusReviews } from '@/data/data';
 import Card2 from '@/components/cards/Card2';
 import MeetTheTeam from '@/components/MeetTheTeam';
 import Accordian from '@/components/Accordian';
 import { ActionCard } from '@/components/ActionCard'
 import Head from 'next/head';
 import Layout from '@/components/layout/Layout';
+import Swipper2 from '@/components/Swipper2';
 
 
 const About = () => {
@@ -30,7 +31,7 @@ const About = () => {
               </div>
             </div>
             <div className="wrapper-A1-Img">
-              <figure><Image src={actioncardImg} /></figure>
+              <figure><Image src={entrepreneurImg} /></figure>
             </div>
 
             <div className="wrapper-A1-card">
@@ -91,6 +92,15 @@ const About = () => {
       <section>
         <div className="wrapper-A4">
           <MeetTheTeam />
+        </div>
+      </section>
+
+      <section>
+        <div className="wrapper-A5">
+          <div className="container">
+            <h2>Client Reviews</h2>
+            <Swipper2 data={aboutusReviews} />
+          </div>
         </div>
       </section>
 

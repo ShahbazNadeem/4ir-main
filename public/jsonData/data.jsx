@@ -6,6 +6,9 @@ import educationSvg from "../svg/educationSvg.png"
 import retaiSvg from "../svg/retaiSvg.png"
 import otherSvg from "../svg/otherSvg.png"
 import unsplsh_card_img from "@/images/unsplsh_card_img.png"
+import animationCardImg from "@/images/animationCardImg.png"
+import animationCardImg1 from "@/images/animationCardImg1.png"
+import aboutusReviewImg from "@/images/aboutusReviewImg.png"
 import digital_blue from "@/images/digital_blue.png"
 import freepik from "@/images/freepik.png"
 import representation from "@/images/representation-use.png"
@@ -497,7 +500,7 @@ export const homeSolutionData = [
         id: 1,
         title: "AI Talk Assist",
         para: "Let AI handle your conversations, so you can focus on what matters.",
-        img: unsplsh_card_img,
+        img: animationCardImg,
     },
     {
         id: 2,
@@ -509,13 +512,13 @@ export const homeSolutionData = [
         id: 3,
         title: "Strategic Counseling",
         para: "Get expert advice to overcome challenges and seize opportunities.",
-        img: unsplsh_card_img,
+        img: animationCardImg1,
     },
     {
         id: 4,
         title: "Advanced Training Programs",
         para: "Empower your team to reach new heights.",
-        img: unsplsh_card_img,
+        img: animationCardImg,
     },
     {
         id: 5,
@@ -527,6 +530,73 @@ export const homeSolutionData = [
         id: 1,
         title: "AI Appointment Marketing",
         para: "Simplify your scheduling and boost productivity.",
-        img: unsplsh_card_img,
+        img: animationCardImg1,
     },
+]
+
+export const aboutusReviews=[
+    {
+        id:1,
+        title:"Victor Murphy",
+        subTitle:"Marketing Specialist",
+        description:"Website is not only visually appealing but also highly responsive. The informative content, from case studies to client testimonials.",
+        img:aboutusReviewImg,
+    },
+    {
+        id:2,
+        title:"Victor Murphy",
+        subTitle:"Marketing Specialist",
+        description:"Website is not only visually appealing but also highly responsive. The informative content, from case studies to client testimonials.",
+        img:aboutusReviewImg,
+    },
+    {
+        id:3,
+        title:"Victor Murphy",
+        subTitle:"Marketing Specialist",
+        description:"Website is not only visually appealing but also highly responsive. The informative content, from case studies to client testimonials.",
+        img:aboutusReviewImg,
+    },
+    {
+        id:4,
+        title:"Victor Murphy",
+        subTitle:"Marketing Specialist",
+        description:"Website is not only visually appealing but also highly responsive. The informative content, from case studies to client testimonials.",
+        img:aboutusReviewImg,
+    },
+    {
+        id:5,
+        title:"Victor Murphy",
+        subTitle:"Marketing Specialist",
+        description:"Website is not only visually appealing but also highly responsive. The informative content, from case studies to client testimonials.",
+        img:aboutusReviewImg,
+    },
+    {
+        id:6,
+        title:"Victor Murphy",
+        subTitle:"Marketing Specialist",
+        description:"Website is not only visually appealing but also highly responsive. The informative content, from case studies to client testimonials.",
+        img:aboutusReviewImg,
+    },
+    {
+        id:7,
+        title:"Victor Murphy",
+        subTitle:"Marketing Specialist",
+        description:"Website is not only visually appealing but also highly responsive. The informative content, from case studies to client testimonials.",
+        img:aboutusReviewImg,
+    },
+    {
+        id:8,
+        title:"Victor Murphy",
+        subTitle:"Marketing Specialist",
+        description:"Website is not only visually appealing but also highly responsive. The informative content, from case studies to client testimonials.",
+        img:aboutusReviewImg,
+    },
+    {
+        id:9,
+        title:"Victor Murphy",
+        subTitle:"Marketing Specialist",
+        description:"Website is not only visually appealing but also highly responsive. The informative content, from case studies to client testimonials.",
+        img:aboutusReviewImg,
+    },
+    
 ]

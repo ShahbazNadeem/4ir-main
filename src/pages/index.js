@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect, useRef } from 'react'
+import React, { useState, useLayoutEffect, useRef, useEffect } from 'react'
 import Image from 'next/image'
 import "./index.css"
 import robot from "@/images/robot.png"
@@ -7,10 +7,11 @@ import whatis4IR from "@/images/what-is-4IR-1.png"
 import voiceanimate from "@/images/voiceanimate.png"
 import Logo2_4ir from "@/images/4IR-Logo2.png"
 import MeetTheTeam from '@/components/MeetTheTeam'
-import { IndustrySpecificSolutions, howToFitData, homeBannerlist, lastestBlog, FAQHomeData, ActionCarddata1, homeSolutionData } from '@/data/data'
+import { IndustrySpecificSolutions, howToFitData, homeBannerlist, lastestBlog, FAQHomeData, homeSolutionData } from '@/data/data'
 import { AiFillCheckCircle } from "react-icons/ai";
 import Card1 from '@/components/cards/Card1'
-import { FaArrowDown, FaArrowUp } from "react-icons/fa";
+import { FiArrowRight } from "react-icons/fi";
+import { FaPlay } from "react-icons/fa";
 import Accordian from '@/components/Accordian'
 import { ActionCard } from '@/components/ActionCard'
 import Head from 'next/head'
@@ -21,6 +22,30 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Index = () => {
+  const [audio, setAudio] = useState(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setAudio(new Audio("/audio-files/heather-audio.wav"));
+    }
+  }, []);
+
+  const handlePlayPause = () => {
+    if (!audio) return;
+
+    if (isPlaying) {
+      audio.pause();
+    } else {
+      audio.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
+  const toggleAnimation = () => {
+    setIsAnimating(!isAnimating);
+  };
+
   const wrapper6th = useRef();
 
   useLayoutEffect(() => {
@@ -125,10 +150,33 @@ const Index = () => {
           <div className="container">
             <h2 className="text-center">A Demo From Our One Solution</h2>
             <div className="voice-container">
-              <div className="voice-img">
-                <figure>
-                  <Image src={voiceanimate} height="100%" alt={voiceanimate} />
-                </figure>
+              <div className="voice">
+                <div
+                  className=""
+                  onClick={() => {
+                    handlePlayPause();
+                    toggleAnimation();
+                  }}
+                >
+                  {isAnimating ? (
+
+                    <div
+                      className={`audio-button ${isAnimating ? "animating" : ""}`}
+                    >
+                      <div className="wave-icon">
+                        <div className="wave wave1"></div>
+                        <div className="wave wave2"></div>
+                        <div className="wave wave3"></div>
+                        <div className="wave wave4"></div>
+                        <div className="wave wave5"></div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="play-btn d-flex justify-content-center ">
+                      <FaPlay />
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           </div>
@@ -155,7 +203,7 @@ const Index = () => {
           <div className='container'>
             <div ref={wrapper6th} className='wrapper-6th-content'>
               <h2>Our Solutions</h2>
-              <button className='btn1'>Learn More</button>
+              {/* <button className='btn1'>Learn More</button> */}
               {
                 homeSolutionData?.map((items, Index) => (
                   <div
@@ -224,7 +272,7 @@ const Index = () => {
               <div className='text-center'>
 
                 <button className="view-more-button">
-                  View More <FaArrowDown style={{ marginLeft: '3px' }} />
+                  View More <FiArrowRight style={{ marginLeft: '3px' }} />
                 </button>
               </div>
             </div>
@@ -244,8 +292,8 @@ const Index = () => {
         <div className="wrapper-11th">
           <div className="container">
             <ActionCard>
-              <ActionCard.Header title="Ready to See It in Action?" />
-              <ActionCard.Body description="On 'The Path to Success,' you will encounter challenges and obstacles that test your resolve. But with determination and perseverance." />
+              <ActionCard.Header title="Ready To Transform Your Real Estate Business With AI?" />
+              {/* <ActionCard.Body description="On 'The Path to Success,' you will encounter challenges and obstacles that test your resolve. But with determination and perseverance." /> */}
               <ActionCard.Button label="Book a free Demo" onClick={() => alert('Demo booked!')} />
             </ActionCard>
           </div>

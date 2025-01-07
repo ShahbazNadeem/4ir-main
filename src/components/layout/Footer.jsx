@@ -34,7 +34,7 @@ const Footer = () => {
                       <ul>
                         {navbarData?.slice(0, 5).map((item, index) => (
                           <li key={index}>
-                            <p>{item.title}</p>
+                            <a href=""><p>{item.title}</p></a>
                           </li>
                         ))}
                       </ul>
@@ -44,9 +44,9 @@ const Footer = () => {
                     <div className="resources">
                       <h5>Resources</h5>
                       <ul>
-                        <li><p>Privacy Policy</p></li>
-                        <li><p>Rate us</p></li>
-                        <li><p>Terms & Conditions</p></li>
+                        <li><a href=""><p>Privacy Policy</p></a></li>
+                        <li><a href=""><p>Rate us</p></a></li>
+                        <li><a href=""><p>Terms & Conditions</p></a></li>
                       </ul>
                     </div>
                   </div>
@@ -66,6 +66,7 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
+
               </div>
               <div className="footer-bottom">
                 <div className="footer-copyright">

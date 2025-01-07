@@ -169,20 +169,136 @@
 .voice-container {
     background-image: url("../../public/images/voice_background.png");
     background-size: cover;
-    /* background-position: center; */
+    background-position: center;
     width: 100%;
 }
 
-.voice-img img {
-    width: 100%;
-    height: auto;
-}
-
-.voice-img {
+.voice {
+    padding: 6px 0px;
     width: 13%;
-    height: 100%;
     margin: 0 auto;
 }
+
+/*  */
+.play-btn {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    padding: 35px;
+    cursor: pointer;
+}
+
+.play-btn svg {
+    margin-left: 10px;
+    color: #B835C7;
+    width: 80px;
+    /* Set desired width */
+    height: 80px;
+}
+
+.audio-button {
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.audio-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.wave-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    /* Adjusted icon width */
+    height: 60%;
+    /* Adjusted icon height */
+}
+
+/* Individual waves */
+.wave {
+    width: 15px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #1A3761 0%, #B835C7 100%);
+}
+
+/* Wave heights */
+.wave1 {
+    height: 40%;
+    /* First wave height */
+}
+
+.wave2 {
+    height: 60%;
+    /* Middle wave height */
+}
+
+.wave3 {
+    height: 100%;
+    /* Third wave height */
+}
+
+.wave4 {
+    height: 60%;
+    /* Fourth wave height */
+}
+
+.wave5 {
+    height: 40%;
+    /* Fifth wave height */
+}
+
+/* Animation */
+@keyframes waveAnimation {
+    0% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(1.5);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+/* Apply animation when the button is active */
+.audio-button.animating .wave1 {
+    animation: waveAnimation 0.8s infinite ease-in-out;
+}
+
+.audio-button.animating .wave2 {
+    animation: waveAnimation 0.8s infinite ease-in-out;
+    animation-delay: 0.2s;
+}
+
+.audio-button.animating .wave3 {
+    animation: waveAnimation 0.8s infinite ease-in-out;
+    animation-delay: 0.4s;
+}
+
+.audio-button.animating .wave4 {
+    animation: waveAnimation 0.8s infinite ease-in-out;
+    animation-delay: 0.6s;
+}
+
+.audio-button.animating .wave5 {
+    animation: waveAnimation 0.8s infinite ease-in-out;
+    animation-delay: 0.8s;
+}
+
+/*  */
 
 /* ------------------------------------- */
 .wrapper-4th {
@@ -228,13 +344,15 @@
 
 .wrapper-6th-animationCard {
     width: 343px;
-    height: 450px;
-    padding: 45px 17px;
+    height: 480px;
+    padding: 30px 17px;
     position: absolute;
-    top: 20%;
+    top: 30%;
+    backdrop-filter: blur(10px);
     border-radius: 13px;
-    background: linear-gradient(0deg, #262626, #262626),
-        radial-gradient(366.83% 228.36% at 4.17% 2.3%, rgba(200, 0, 164, 0) 0%, rgba(132, 0, 250, 0.176) 100%);
+    /* background: linear-gradient(0deg, #262626, #262626),
+        radial-gradient(366.83% 228.36% at 4.17% 2.3%, rgba(200, 0, 164, 0) 0%, rgba(132, 0, 250, 0.176) 100%); */
+        background: linear-gradient(145deg, rgba(38,38,38,1) 2%, rgba(50,35,54,0.532127808988764) 39%, rgba(50,35,54,0.4899929775280899) 62%, rgba(54,32,72,1) 100%);
 }
 
 .wrapper-6th-animationCard img {
@@ -321,6 +439,11 @@
     padding: 50px 0px;
 }
 
+.wrapper-11th .action-card-item {
+    width: 770px;
+
+}
+
 @media (min-width: 1400px) {
     .wrapper-2nd {
         padding-top: 80px;
@@ -371,11 +494,24 @@
     .wrapper-6th-animationCard {
         width: 300px;
         height: 400px;
-        padding: 30px 18px;
+        padding: 20px 18px;
     }
 
     .wrapper-7th-content {
         width: 77%;
+    }
+
+    .play-btn {
+        padding: 25px;
+    }
+
+    .play-btn svg {
+        width: 70px;
+        height: 70px;
+    }
+
+    .audio-button {
+        height: 120px;
     }
 }
 
@@ -436,6 +572,27 @@
         height: 360px;
         padding: 20px 16px;
     }
+
+    .play-btn {
+        padding: 22px 18px;
+    }
+
+    .play-btn svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .audio-button {
+        height: 93px;
+    }
+
+    .wave {
+        width: 10px;
+    }
+
+    .wrapper-11th .action-card-item {
+        width: 575px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -489,7 +646,6 @@
     }
 
     .box-4th-wrapper .fit-card {
-        /* flex-basis: 32%; */
         flex-basis: 47%;
         padding: 10px 10px;
         gap: 10px;
@@ -498,6 +654,7 @@
     .wrapper-7th-content {
         width: 100%;
     }
+
     .wrapper-7th-content p {
         line-height: 30px;
     }
@@ -509,8 +666,21 @@
     .wrapper-6th-animationCard {
         width: 230px;
         height: 300px;
-        padding: 20px 16px;
+        padding: 0px 16px;
     }
+
+    .play-btn {
+        padding: 10px 16px;
+    }
+
+    .audio-button {
+        height: 70px;
+    }
+
+    .wave {
+        width: 10px;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -554,7 +724,24 @@
     .wrapper-6th-content h2 {
         font-size: 40px !important;
     }
+
     .wrapper-7th-content p {
         line-height: 25px;
+    }
+
+    .play-btn {
+        padding: 5px 7px;
+    }
+
+    .audio-button {
+        height: 60px;
+    }
+
+    .wave {
+        width: 5px;
+    }
+
+    .wrapper-11th .action-card-item {
+        width: 100%;
     }
 }

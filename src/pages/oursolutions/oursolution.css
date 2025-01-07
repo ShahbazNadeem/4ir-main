@@ -28,6 +28,16 @@
     margin: 0 auto;
 }
 
+/* /////////////////wrapper-O3//////////////// */
+.wrapper-O3 {
+    padding-top: 50px;
+}
+
+.wrapper-O3 h2 {
+    text-align: center !important;
+    margin-bottom: 40px;
+}
+
 /* /////////////////wrapper-O4//////////////// */
 .wrapper-O4 {
     padding: 40px 0px;
@@ -76,6 +86,7 @@
     .wrapper-O1 .action-card {
         padding-top: 140px !important;
     }
+
     .action-card .action-card-item {
         width: 300px !important;
     }
