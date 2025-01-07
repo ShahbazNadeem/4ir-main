@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -12,11 +12,12 @@ const Swipper2 = ({ data }) => {
     return (
         <div className="Swipper2">
             <Swiper
+                modules={[Autoplay]}
                 slidesPerView={1}
                 spaceBetween={10}
                 loop={true}
                 autoplay={{
-                    delay: 500,
+                    delay: 2000,
                     disableOnInteraction: false,
                 }}
                 breakpoints={{

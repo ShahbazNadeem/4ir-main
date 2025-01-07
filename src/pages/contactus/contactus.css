@@ -55,10 +55,9 @@
     margin-bottom: 0px !important;
 }
 
-.contact-info {
+.contact-info-sec {
     width: 160px;
     display: flex;
-    align-items: center;
     gap: 20px;
 }
 
@@ -143,6 +142,23 @@
     margin: 0 auto;
 }
 
+/* /////////////wrapper-C3/////////////////// */
+.wrapper-C3{
+    padding: 50px 0px 100px 0px;
+}
+.wrapper-C3-calender h2{
+    text-align: center !important;
+    margin-bottom: 40px;
+}
+.wrapper-C3-calender{
+    margin: 0 auto;
+    max-width: 648px;
+    height: 800px;
+}
+.wrapper-C3-calender .calendly-inline-widget{
+    width: 100%;
+    height: 100%;
+}
 /* /////////////wrapper-C4/////////////////// */
 .wrapper-C4 {
     padding-top: 50px;
@@ -160,12 +176,12 @@
         padding: 18px;
     }
 
-    .contact-info {
+    .contact-info-sec {
         width: 130px;
         gap: 10px;
     }
 
-    .contact-info img {
+    .contact-info-sec img {
         width: 30px;
         height: 30px;
     }
@@ -216,9 +232,12 @@
         flex-wrap: wrap;
     }
 
-    .contact-info {
+    .contact-info-sec {
         align-items: center;
         justify-content: center;
+    }
+    .wrapper-C3-calender {
+        height: 500px;
     }
 }
 
@@ -231,7 +250,7 @@
         border-radius: 20px;
     }
 
-    .contact-info {
+    .contact-info-sec {
         align-items: center;
         justify-content: start;
         width: 170px;

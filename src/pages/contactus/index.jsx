@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import "./contactus.css"
 import { ActionCard } from '@/components/ActionCard'
@@ -36,13 +37,13 @@ const index = () => {
                                 <div className="contact-info-container">
                                     {
                                         contactUsData?.map((data, index) => (
-                                            <div key={index} className="contact-info">
+                                            <div key={index} className="contact-info-sec">
                                                 <div className="contact-icon">
                                                     <Image src={data.icon} alt="icon" width={30} height={30} />
                                                 </div>
                                                 <div className="contact-text">
                                                     <p>{data.title}</p>
-                                                    <p>{data.title2}</p>
+                                                    {data.title2 && <p>{data.title2}</p>}
                                                 </div>
                                             </div>
                                         ))}
@@ -111,6 +112,22 @@ const index = () => {
 
 
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div className="wrapper-C3">
+                    <div className="container">
+                        <div className="wrapper-C3-calender">
+                            <h2>Get a Free Demo</h2>
+                            <iframe
+                                className="calendly-inline-widget"
+                                src="https://calendly.com/bkrevoy/60-minute-meeting-for-4ir-consulting?background_color=1a1a1a&text_color=ffffff"
+                                // style={{ width: "100%", height: "700px",background_color:"red" }}
+                                loading="lazy"
+                            ></iframe>
                         </div>
                     </div>
                 </div>

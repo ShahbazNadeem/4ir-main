@@ -507,10 +507,6 @@
     border: 1px solid #1F1F1F;
     cursor: pointer;
 }
-.Swipper2-content:hover {
-    border: 1px solid #160A25
-
-}
 
 .Swipper2-box {
     display: flex;
