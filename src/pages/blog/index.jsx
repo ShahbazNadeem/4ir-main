@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 import "./blog.css"
 import Swipper1 from '@/components/swipper1/Swipper1';
@@ -7,20 +8,21 @@ import Card1 from '@/components/cards/Card1';
 import Head from 'next/head';
 import { FaArrowDown } from 'react-icons/fa';
 import Layout from '@/components/layout/Layout';
+import Link from 'next/link';
 
 
 const index = () => {
-    const [visibleCount, setVisibleCount] = useState(6); 
+    const [visibleCount, setVisibleCount] = useState(6);
 
     const handleShowMore = () => {
-        setVisibleCount((prevCount) => prevCount + 3); 
+        setVisibleCount((prevCount) => prevCount + 3);
     };
     return (
         <Layout>
             <Head>
                 <title>Blogs</title>
             </Head>
-            
+
             <section>
                 <div className="wrapper-B1">
                     <ActionCard>
@@ -43,7 +45,13 @@ const index = () => {
                     <div className="container">
                         <div className="wrapper-B3-cards">
                             {lastestBlog?.slice(0, visibleCount).map((item, index) => (
-                                <Card1 key={index} data={item} />
+                                // <Card1 key={index} data={item} />
+                                <Card1 data={item} className="">
+                                    <Card1.Image src={item.img} alt="img" />
+                                    <Card1.Title>{item.title}</Card1.Title>
+                                    <Card1.Description>{item.description}</Card1.Description>
+                                    <Card1.Link>{item.link}</Card1.Link>
+                                </Card1>
                             ))}
                         </div>
                         {visibleCount < lastestBlog?.length && (

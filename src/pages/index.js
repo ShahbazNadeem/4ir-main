@@ -190,7 +190,12 @@ const Index = () => {
             <div className='box-4th-wrapper'>
               {
                 howToFitData?.map((item) => (
-                  <Card1 data={item} className="fit-card-hover" />
+                  // <Card1 data={item} className="fit-card-hover" />
+                  <Card1 data={item} className="fit-card-hover">
+                    <Card1.Image src={item.img} alt="img" />
+                    <Card1.Title>{item.title}</Card1.Title>
+                    <Card1.Description>{item.description}</Card1.Description>
+                  </Card1>
                 ))
               }
             </div>
@@ -266,7 +271,12 @@ const Index = () => {
             <div>
               <div className="box-9th-wrapper">
                 {lastestBlog?.slice(0, 3).map((item, index) => (
-                  <Card1 key={index} data={item} />
+                  // <Card1 key={index} data={item} />
+                  <Card1 data={item} className="">
+                    <Card1.Image src={item.img} alt="img" />
+                    <Card1.Title>{item.title}</Card1.Title>
+                    <Card1.Description>{item.description}</Card1.Description>
+                  </Card1>
                 ))}
               </div>
               <div className='text-center'>

@@ -24,15 +24,16 @@
 }
 
 ::-webkit-scrollbar {
-  display: none; /* Hides the scrollbar in WebKit browsers (Chrome, Safari) */
+  display: none;
 }
+
 body {
   font-family: Instrument Sans;
   background-color: var(--body) !important;
   color: white !important;
   overflow-x: hidden !important;
-  scrollbar-width: none; /* Hides scrollbar in Firefox */
-  -ms-overflow-style: none; /* Hides scrollbar in older IE/Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .container {
@@ -85,7 +86,13 @@ p {
   text-align: left;
 }
 
-a{
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+Link {
+  color: white !important;
   text-decoration: none !important;
 }
 

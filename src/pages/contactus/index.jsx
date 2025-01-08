@@ -125,7 +125,6 @@ const index = () => {
                             <iframe
                                 className="calendly-inline-widget"
                                 src="https://calendly.com/bkrevoy/60-minute-meeting-for-4ir-consulting?background_color=1a1a1a&text_color=ffffff"
-                                // style={{ width: "100%", height: "700px",background_color:"red" }}
                                 loading="lazy"
                             ></iframe>
                         </div>

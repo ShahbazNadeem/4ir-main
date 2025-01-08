@@ -1,12 +1,15 @@
+"use client";
 import React from 'react'
 import "../widgets.css"
 import Image from 'next/image'
 import Logo from "@/images/Logo.png"
 import { navbarData } from '@/data/layoutData'
 import { IoIosMenu, IoMdClose } from "react-icons/io";
-
+import Link from "next/link";
+import { useRouter } from 'next/router';
 
 const Header = () => {
+  const router = useRouter();
 
   return (
     <section>
@@ -25,36 +28,37 @@ const Header = () => {
             </div>
             <div className="header-list">
               <ul>
-                {navbarData?.map((item, index) => (
-                  <li key={index}>
-                    {item.list && item.list.length > 0 ? (
-                      <a
-                        href={item.link}
-                        className="simple-text dropdown-toggle"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        {item.title}
-                      </a>
-                    ) : (
-                      <span className="simple-text">{item.title}</span>
-                    )}
-                    {item.list && item.list.length > 0 && (
-                      <div className="dropdown-menu">
-                        {item.list.map((listItem, index) => (
-                          <a
-                            key={index}
-                            className="dropdown-item"
-                            href={listItem.listlink}
-                          >
-                            {listItem.listItem}
-                          </a>
-                        ))}
-                      </div>
-                    )}
-                  </li>
-                ))}
+                {navbarData?.map((item, index) => {
+                  return (
+                    <li key={index}>
+                      {item.list && item.list.length > 0 ? (
+                        <Link
+                          href={item.link}
+                          className={`dropdown-toggle ${item.link === router.pathname ? 'active-link' : 'simple-text'}`}
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          {item.title}
+                        </Link>
+                      ) : (
+                        <span >
+                          <Link href={item.link} className={` ${item.link === router.pathname ? 'active-link' : 'simple-text'}`}>{item.title}</Link>
+                        </span>
+                      )}
+                      {item.list && item.list.length > 0 && (
+                        <div className="dropdown-menu">
+                          <Link href={item.link}>{item.title}</Link>
+                          {item.list.map((listItem, index) => (
+                            <Link key={index} className={`dropdown-item ${item.linklist === router.pathname ? 'active-link' : 'simple-text'}`}
+                              href={listItem.listlink}>
+                              {listItem.listItem}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </li>
+                  )
+                })}
               </ul>
             </div>
             <div className="header-button">
@@ -78,18 +82,19 @@ const Header = () => {
                     {navbarData?.map((item, index) => (
                       <li key={index}>
                         {item.list && item.list.length > 0 ? (
-                          <a href={item.link} className="simple-text dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <Link href={item.link} className={`dropdown-toggle ${item.link === router.pathname ? 'active-link' : 'simple-text'}`} role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             {item.title}
-                          </a>
+                          </Link>
                         ) : (
-                          <span className="simple-text">{item.title}</span>
+                          <Link href={item.link} className={` ${item.link === router.pathname ? 'active-link' : 'simple-text'}`}>{item.title}</Link>
                         )}
                         {item.list && item.list.length > 0 && (
                           <div className="dropdown-menu">
+                            <Link href={item.link}>{item.title}</Link>
                             {item.list.map((listItem, index) => (
-                              <a key={index} className="dropdown-item" href={listItem.listlink}>
+                              <Link key={index} className={`dropdown-item ${item.linklist === router.pathname ? 'active-link' : ''}`} href={listItem.listlink}>
                                 {listItem.listItem}
-                              </a>
+                              </Link>
                             ))}
                           </div>
                         )}

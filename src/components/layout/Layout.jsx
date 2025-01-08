@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
 
     return (
         <>
@@ -11,5 +11,5 @@ const Layout = ({children}) => {
             <Footer />
         </>
     );
-} 
+}
 export default Layout

@@ -80,9 +80,10 @@
     cursor: pointer;
 }
 
-.simple-text {
-    color: white !important;
-    text-decoration: none;
+.active-link {
+    color: rgba(135, 0, 255, 0.5) !important;
+    font-size: 20px;
+    /* text-shadow: 1px 0px 20px white; */
 }
 
 .header-list ul li .dropdown-menu {
@@ -160,7 +161,7 @@
 }
 
 .header-canvas .dropdown-menu a {
-    color: white;
+    /* color: white; */
     margin: 10px 0px;
     padding: 5px !important;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -170,6 +171,7 @@
     background-color: #4A256B;
     color: white;
 }
+
 
 /* ///////////////Footer//////////////////////// */
 .wrapper-footer {

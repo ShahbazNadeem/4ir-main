@@ -2,7 +2,7 @@ export const navbarData = [
     {
         id: 1,
         title: "Home",
-        link: ""
+        link: "/"
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ export const navbarData = [
                 listlink:"",
             },
         ],
-        link: ""
+        link: "/aboutus"
     },
     {
         id: 3,
@@ -44,7 +44,7 @@ export const navbarData = [
                 listlink:"",
             },
         ],
-        link: ""
+        link: "/oursolutions"
 
     },
     {
@@ -77,11 +77,11 @@ export const navbarData = [
     {
         id: 5,
         title: "Blog",
-        link: ""
+        link: "/blog"
     },
     {
         id: 6,
         title: "Contact us",
-        link: ""
+        link: "/contactus"
     },
 ]
