@@ -21,7 +21,7 @@ export const navbarData = [
         list: [
             {
                 listItem: "AI Talk Assist",
-                listlink:"/oursolutions/aitalkassist",
+                listlink:"",
             },
             {
                 listItem: "AI Lead Generation",
@@ -29,19 +29,19 @@ export const navbarData = [
             },
             {
                 listItem: "Strategic Counseling",
-                listlink:"/oursolutions/strategicconseling",
+                listlink:"",
             },
             {
                 listItem: "Advanced Training Programs",
-                listlink:"/oursolutions/strategicconseling",
+                listlink:"",
             },
             {
                 listItem: "Advanced Training Programs",
-                listlink:"/oursolutions/strategicconseling",
+                listlink:"",
             },
             {
                 listItem: "AI Appointment Marketing",
-                listlink:"/oursolutions/strategicconseling",
+                listlink:"",
             },
         ],
         link: "/oursolutions"
@@ -72,7 +72,7 @@ export const navbarData = [
                 listlink:"",
             },
         ],
-        link: ""
+        link: "/industries"
     },
     {
         id: 5,

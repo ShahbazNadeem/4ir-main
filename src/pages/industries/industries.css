@@ -1,0 +1,32 @@
+/* /////////////////wrapper-I1///////////////// */
+.wrapper-I1 .action-card {
+    padding-top: 180px !important;
+    border-radius: 0px !important;
+    max-width: 1916px;
+    margin: 0 auto;
+    background-image: url("../../../public/images/3d-modern-background.png") !important;
+}
+.action-card-item {
+    width: 1000px !important;
+}
+.action-card-item p{
+    width: 80%;
+}
+@media (max-width:992px) {
+    .action-card-item {
+        width: 800px !important;
+    }
+}
+@media (max-width:768px) {
+    .action-card-item {
+        width: 100% !important;
+    }
+}
+@media (max-width:576px) {
+    .wrapper-I1 .action-card {
+        padding-top: 140px !important;
+    }    
+    .action-card-item p{
+        width: 90%;
+    }
+}
