@@ -35,7 +35,7 @@ const index = () => {
                         <div ref={wrapper2nd} className="">
                             <div className="wrapper-O2-animation-content">
 
-                                <div className="wrapper-6th-animationCard">gg</div>
+                                {/* <div className="wrapper-6th-animationCard">gg</div> */}
 
 
                             </div>

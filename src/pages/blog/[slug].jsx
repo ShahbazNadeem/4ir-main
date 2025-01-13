@@ -1,5 +1,7 @@
 "use client";
-import { lastestBlog } from "@/data/data";
+import Layout from "@/components/layout/Layout";
+import Swipper2 from "@/components/Swipper2";
+import { aboutusReviews, lastestBlog } from "@/data/data";
 import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -31,21 +33,33 @@ export default function BlogPost() {
 
     const { title, img, description } = data;
     return (
-        <>
+        <Layout>
             <Head>
                 <title>{data.title}</title>
             </Head>
             <section>
-                <div className="wrapper-slug">
+                <div className="wrapper-slug-S1">
                     <div className="container">
-                        <div>
-                            <h1>{title}</h1>
-                            <Image src={img} alt={data.title} />
+                        <div className="slug-S1-content">
+                            <h2>{title}</h2>
+                            <figure><Image src={img} alt={data.title} /></figure>
                             <p>{description}</p>
                         </div>
                     </div>
                 </div>
             </section>
-        </>
+
+            <section>
+                <div className="wrapper-slug-S2">
+                    <div className="container">
+                        <div className="slug-S2-content">
+
+                            <h2>Client Reviews</h2>
+                            <Swipper2 data={aboutusReviews} />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </Layout>
     );
 }
