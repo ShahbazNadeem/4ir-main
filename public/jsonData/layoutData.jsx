@@ -21,27 +21,27 @@ export const navbarData = [
         list: [
             {
                 listItem: "AI Talk Assist",
-                listlink:"",
+                listlink:"/oursolutions/aitalkassist",
             },
             {
                 listItem: "AI Lead Generation",
-                listlink:"",
+                listlink:"/oursolutions/aileadgeneration",
             },
             {
                 listItem: "Strategic Counseling",
-                listlink:"",
+                listlink:"/oursolutions/strategicconseling",
             },
             {
                 listItem: "Advanced Training Programs",
-                listlink:"",
+                listlink:"/oursolutions/strategicconseling",
             },
             {
                 listItem: "Advanced Training Programs",
-                listlink:"",
+                listlink:"/oursolutions/strategicconseling",
             },
             {
                 listItem: "AI Appointment Marketing",
-                listlink:"",
+                listlink:"/oursolutions/strategicconseling",
             },
         ],
         link: "/oursolutions"

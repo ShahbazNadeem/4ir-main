@@ -1,0 +1,18 @@
+/* /////////////////wrapper-AI1//////////////// */
+.wrapper-AI1 .action-card {
+    padding-top: 180px !important;
+    border-radius: 0px !important;
+    max-width: 1916px;
+    margin: 0 auto;
+    background-image: url("../../../../public/images/3d-modern-background.png") !important;
+}
+.wrapper-AI1 .action-card .action-card-item {
+    width: 1020px !important;
+}
+/* media query */
+
+@media (max-width: 1200px) {
+    .wrapper-O1 .action-card .action-card-item {
+        width: 890px !important;
+    }
+}

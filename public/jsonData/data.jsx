@@ -610,3 +610,42 @@ export const aboutusReviews=[
     },
     
 ]
+
+export const ourSolutionAnimaieData=[
+    {
+        id:1,
+        title:"AI Talk Assist",
+        description:"Empower your team with AI-powered conversation solutions. Our AI Talk Assist technology enables seamless communication, automates routine tasks, and improves customer satisfaction.",
+        link:"",
+    },
+    {
+        id:2,
+        title:"AI Lead Generation",
+        description:"Identify and capture high-quality leads with our AI-powered lead generation tools. Our advanced algorithms analyze vast amounts of data to identify potential customers and automate lead nurturing processes.",
+        link:"",
+    },
+    {
+        id:3,
+        title:"Strategic Counseling",
+        description:"Gain expert guidance to navigate the complexities of the digital age. Our strategic consulting services help you develop and implement effective AI strategies, optimize business processes, and drive innovation.",
+        link:"",
+    },
+    {
+        id:4,
+        title:"Advanced Training Programs",
+        description:"Equip your team with the latest AI skills and knowledge through our advanced training programs. Our expert trainers will teach you how to leverage AI to solve real-world business problems.",
+        link:"",
+    },
+    {
+        id:5,
+        title:"Business Growth Strategies",
+        description:"Accelerate your business growth with our AI-powered growth strategies. We help you identify new market opportunities, optimize marketing campaigns, and improve sales performance.",
+        link:"",
+    },
+    {
+        id:6,
+        title:"AI Appointment Marketing",
+        description:"Optimize your appointment scheduling process with our AI-powered appointment marketing solution. Our system automates appointment booking, reminders, and follow-ups, saving you time and increasing efficiency.",
+        link:"",
+    },
+]

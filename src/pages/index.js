@@ -65,7 +65,7 @@ const Index = () => {
           rotate: -90,
           opacity: 0,
           stagger: {
-            each: 2,
+            each: 3,
             from: "start",
           },
           duration: 2,

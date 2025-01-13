@@ -1,4 +1,5 @@
-import React from 'react'
+"use client";
+import React, { useRef } from 'react'
 import "./oursolution.css"
 import { ActionCard } from '@/components/ActionCard'
 import Accordian from '@/components/Accordian'
@@ -8,6 +9,7 @@ import Layout from '@/components/layout/Layout';
 import Swipper2 from '@/components/Swipper2'
 
 const index = () => {
+    const wrapper2nd = useRef();
     return (
         <Layout>
             <Head>
@@ -29,6 +31,14 @@ const index = () => {
                         <div className="wrapper-O2-content text-center">
                             <h2>Our Solutions</h2>
                             <p>At 4IR Inc., we offer a comprehensive suite of AI-powered solutions to help you achieve your business goals. Our solutions are designed to streamline operations, enhance customer experiences, and drive growth.</p>
+                        </div>
+                        <div ref={wrapper2nd} className="">
+                            <div className="wrapper-O2-animation-content">
+
+                                <div className="wrapper-6th-animationCard">gg</div>
+
+
+                            </div>
                         </div>
                     </div>
                 </div>
